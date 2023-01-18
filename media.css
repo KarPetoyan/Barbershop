@@ -1,0 +1,569 @@
+@media screen and (max-width:1080px){
+    /*About*/
+    .about_heading{
+        font-size: 20px;
+    }
+
+    /*Gallery*/
+    .gallery_img_div1{
+        width: 430px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .gallery_img2, .gallery_img1{
+        display: none;
+    }
+
+    .gallery_img_div4{
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    /*Header*/
+    header{
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .header_left, .header_right{
+        display: none;
+    }
+
+    .logo_dot{
+        display: inline-block;
+    }
+
+    /*Burger*/
+    .burger{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .burger_lines{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .burger_line1{
+        transform: translateY(-7px);
+    }
+
+    .burger_line1-js{
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .burger_line2-js{
+        width: 0;
+    }
+
+    .burger_line3{
+        transform: translateY(7px);
+    }
+
+    .burger_line3-js{
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .burger_menu{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(40, 40, 40);
+        position: fixed;
+        z-index: 99;
+        top: 13vh;
+        right: -100%;
+        transition: .4s;
+    }
+
+    .burger_menu-js{
+        right: 0;
+    }
+
+    .burger_menu_ul{
+        width: 100%;
+        height: 100%;
+        padding: 0 25px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+
+    .burger_menu{
+        display: inline-block;
+    }
+
+    /*About*/
+
+    .about_text > p{
+        font-size: 18px;
+    }
+
+    .haircut_div{
+        flex-direction: column;
+    }
+
+    .fa-arrow-left{
+        position: absolute;
+        top: 50%;
+        left: 100px;
+    }
+
+    .fa-arrow-right{
+        position: absolute;
+        top: 50%;
+        right: 100px;
+    }
+
+    /*Pricelist*/
+    .pricelist_div{
+        flex-wrap: wrap;
+    }
+
+    .pricelists{
+        height: auto;
+    }
+
+    /*Franchayzing*/
+    .franchayzing_div_left{
+        font-size: 22px;
+    }
+
+    .franchayzing_right{
+        font-size: 12px;
+    }
+
+    .franchayzing_logo{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width:900px){
+    /*About*/
+    .about{
+        height: 600px;
+    }
+
+    .about_div{
+        height: 550px;
+        flex-direction: column;
+        z-index: 58;
+    }
+
+    .about_text{
+        width: 90%;
+        height: auto;
+    }
+
+    .about_img{
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        right: 45px;
+        bottom: 8px;
+    }
+
+    .about::after{
+        height: 80px;
+    }
+
+    /*Pricelist*/
+    .pricelist_img1{
+        width: 60px;
+        height: 200px;
+    }
+
+    .pricelist_img2{
+        width: 80px;
+        height: 225px;
+    }
+
+    /*Masters*/
+    .masters{
+        gap: 50px;
+    }
+
+    .masters_div{
+        width: 460px;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .master_div{
+        min-width: 200px;
+        height: 250px;
+    }
+
+    .master_imgs{
+        width: 150px;
+        height: 200px;
+    }
+
+    .masters_box{
+        width: 300px;
+        height: 300px;
+    }
+    /*Franchayzing*/
+    .franchayzing_heading{
+        font-size: 20px;
+    }
+
+    .franchayzing_div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .franchayzing_div_left, .franchayzing_right{
+        width: 90%;
+        text-align: center;
+    }
+
+    .franchayzing_right{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .franchayzing_right > h1{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:700px){
+    /*About*/
+    .about_heading{
+        font-size: 15px;
+    }
+
+    .about_text > p{
+        font-size: 17px;
+    }
+
+    .about_text{
+        gap: 15px;
+    }
+
+    .about::after{
+        height: 60px;
+    }
+
+    .about_img{
+        bottom: -25px;
+    }
+
+    /*Haircut*/
+    .haircut_img{
+        width: 200px;
+        height: 250px;
+    }
+
+    .haircut_img1, .haircut_img2{
+        width: 100px;
+        height: 150px;
+    }
+
+    .haircut_img1{
+        top: 100px;
+    }
+
+    .haircut_img2{
+        bottom: -50px;
+    }
+
+    .haircut_text > h1{
+        font-size: 40px;
+    }
+
+    .haircut_text > p{
+        font-size: 35px;
+    }
+
+    .fa-arrow-left, .fa-arrow-right{
+        font-size: 35px;
+    }
+
+    .fa-arrow-left{
+        left: 20px;
+    }
+
+    .fa-arrow-right{
+        right: 20px;
+    }
+
+    /*Footer*/
+    footer{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer_ul{
+        width: auto;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:600px){
+    /*Main*/
+    .main_text{
+        width: 400px;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .more{
+        width: 220px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .about_img{
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        right: 45px;
+        bottom: 0;
+    }
+
+    /*Haircut*/
+    .haircut_heading{
+        font-size: 13px;
+    }
+
+    .haircut_img2{
+        bottom: 0;
+    }
+
+    /*Pricelist*/
+    .pricelist_heading{
+        font-size: 15px;
+    }
+
+    .price_list{
+        min-width: 300px;
+        font-size: 13px;
+    }
+
+    .pricelist_img1{
+        width: 60px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    /*Burger*/
+    .burger_menu_ul{
+        font-size: 20px;
+    }
+
+    /*Haircut*/
+    .haircut_heading{
+        font-size: 10px;
+    }
+
+    .haircut_img{
+        width: 150px;
+        height: 200px;
+    }
+
+    .haircut_text_div{
+        width: 300px;
+    }
+
+    .haircut_text{
+        min-width: 300px;
+        text-align: center;
+    }
+
+    .haircut_text > h1{
+        font-size: 25px;
+    }
+
+    .haircut_text > p{
+        font-size: 30px;
+    }
+
+    .fa-arrow-left, .fa-arrow-right{
+        font-size: 25px;
+    }
+
+    .haircut_heading{
+        flex-direction: column;
+    }   
+
+    /*Masters*/
+    .masters{
+        gap: 0;
+    }
+
+    .masters_div{
+        width: 400px;
+        height: auto;
+        padding-top: 30px;
+        gap: 0;
+    }
+
+    .master_div{
+        min-width: 400px;
+        height: 450px;
+    }
+
+    .masters_heading{
+        font-size: 20px;
+    }
+
+    .master_imgs{
+        width: 200px;
+        height: 250px;
+    }
+
+    /*Gallery*/
+    .gallery_img_div3{
+        width: auto;
+        height: auto;
+    }
+
+    .gallery_img3{
+        width: 400px;
+        height: 250px;
+    }
+
+    .gallery_img4{
+        width: 190px;
+        height: 110px;
+    }
+
+    .gallery_img5{
+        width: 190px;
+        height: 120px;
+    }
+
+    .gallery_img6{
+        width: 180px;
+        height: 250px;
+    }
+
+    .gallery_img7{
+        width: 150px;
+        height: 150px;
+    }
+
+    /*Franchayzing*/
+    .franchayzing_heading{
+        font-size: 18px;
+    }
+
+    .franchayzing_div_left{
+        min-width: 300px;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    .franchayzing_div_left > p{
+        width: 300px;
+    }
+
+    .franchayzing_right,.franchayzing_div_right{
+        min-width: 300px;
+        font-size: 10px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:400px){
+    /*Main*/
+    .main_text{
+        width: 300px;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    /*About*/
+    .about_heading{
+        font-size: 10px;
+    }
+
+    .about_more{
+        width: 120px;
+        height: 40px;
+        position: relative;
+        right: 50px;
+        font-size: 12px;
+    }
+
+    /*Pricelist*/
+    .pricelist_img2{
+        width: 40px;
+        height: 120px;
+        bottom: -20px;
+    }
+
+    /*Masters*/
+    .masters_div{
+        width: 300px;
+        height: auto;
+        padding-top: 30px;
+        gap: 0;
+    }
+
+    .master_div{
+        min-width: 300px;
+        height: 350px;
+    }
+
+    .masters_heading{
+        font-size: 15px;
+    }
+
+    /*Gallery*/
+    .gallery_img_div1{
+        width: 300px;
+    }
+
+    .gallery_img3{
+        width: 300px;
+        height: 200px;
+    }
+
+    .gallery_img4{
+        width: 150px;
+        height: 80px;
+    }
+
+    .gallery_img5{
+        width: 140px;
+        height: 90px;
+    }
+
+    .gallery_img6{
+        width: 120px;
+        height: 200px;
+    }
+
+    .gallery_img7{
+        width: 140px;
+        height: 120px;
+    }
+
+    /*Footer*/
+    .footer_ul{
+        font-size: 12px;
+    }
+}
